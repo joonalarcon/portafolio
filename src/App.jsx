@@ -6,7 +6,7 @@ import LogoTailwind from "./assets/logos/LogoTailwind";
 
 function App() {
   const animationLogos =
-    "transform transition duration-500 hover:scale-110 ";
+    "transform transition duration-500 hover:scale-110 w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-36 lg:h-36";
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-4">
