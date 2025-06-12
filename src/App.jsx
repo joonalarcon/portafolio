@@ -16,7 +16,7 @@ function App() {
           Jonathan Alarcón
         </h1>
         <h3 className="text-xl sm:text-2xl font-semibold mt-2">
-          Full Stack Developer 2
+          Full Stack Developer 
         </h3>
       </header>
 
@@ -37,7 +37,7 @@ function App() {
         <LogoVite
           className={`${animationLogos} animate-wiggle animate-infinite animate-duration-[4000ms] animate-ease-in-out`}
         />
-       
+
         <LogoTailwind
           className={`${animationLogos} animate-shake animate-duration-[2000ms] animate-infinite animate-ease-in-out `}
         />
