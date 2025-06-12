@@ -16,7 +16,7 @@ function App() {
           Jonathan Alarcón
         </h1>
         <h3 className="text-xl sm:text-2xl font-semibold mt-2">
-          Full Stack Developer 
+          Full Stack Developer 22
         </h3>
       </header>
 
