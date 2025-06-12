@@ -1,8 +1,9 @@
 import "./App.css";
-import LogoAstro from "./assets/logos/LogoAstro";
+
 import LogoGithub from "./assets/logos/LogoGithub";
 import LogoReact from "./assets/logos/LogoReact";
 import LogoTailwind from "./assets/logos/LogoTailwind";
+import LogoVite from "./assets/logos/LogoVite";
 
 function App() {
   const animationLogos =
@@ -32,9 +33,11 @@ function App() {
       </div>
 
       <div className="flex justify-center gap-6 flex-wrap">
-        <LogoAstro
-          className={`${animationLogos}  animate-wiggle animate-duration-[2000ms] animate-infinite animate-ease-in-out`}
+
+        <LogoVite
+          className={`${animationLogos} animate-wiggle animate-infinite animate-duration-[4000ms] animate-ease-in-out`}
         />
+       
         <LogoTailwind
           className={`${animationLogos} animate-shake animate-duration-[2000ms] animate-infinite animate-ease-in-out `}
         />
