@@ -6,7 +6,7 @@ import LogoTailwind from "./assets/logos/LogoTailwind";
 
 function App() {
   const animationLogos =
-    "transform transition duration-500 hover:scale-110 animate-bounce";
+    "transform transition duration-500 hover:scale-110 ";
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-4">
@@ -20,7 +20,7 @@ function App() {
       </header>
 
       <button
-        className="flex items-center justify-center bg-amber-100 hover:bg-amber-200 w-40 h-14 rounded-full shadow-md transition mb-6"
+        className="flex items-center justify-center bg-black w-40 h-14 rounded-2xl shadow-md transition mb-6"
         onClick={() => window.open("https://github.com/joonalarcon", "_blank")}>
         <LogoGithub className="w-8 h-8" />
       </button>
