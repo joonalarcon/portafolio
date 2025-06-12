@@ -32,9 +32,15 @@ function App() {
       </div>
 
       <div className="flex justify-center gap-6 flex-wrap">
-        <LogoAstro className={animationLogos} />
-        <LogoTailwind className={animationLogos} />
-        <LogoReact className={animationLogos} />
+        <LogoAstro
+          className={`${animationLogos}  animate-wiggle animate-duration-[2000ms] animate-infinite animate-ease-in-out`}
+        />
+        <LogoTailwind
+          className={`${animationLogos} animate-shake animate-duration-[2000ms] animate-infinite animate-ease-in-out `}
+        />
+        <LogoReact
+          className={`${animationLogos} animate-spin animate-infinite animate-duration-[4000ms] animate-ease-in-out`}
+        />
       </div>
     </div>
   );
