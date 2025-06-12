@@ -1,50 +1,42 @@
 import "./App.css";
+import LogoAstro from "./assets/logos/LogoAstro";
 import LogoGithub from "./assets/logos/LogoGithub";
 import LogoReact from "./assets/logos/LogoReact";
 import LogoTailwind from "./assets/logos/LogoTailwind";
-import LogoVite from "./assets/logos/LogoVite";
 
 function App() {
   const animationLogos =
-    "transform transition duration-500 hover:scale-110";
+    "transform transition duration-500 hover:scale-110 animate-bounce";
 
   return (
-    <>
-      <div className="flex flex-col justify-center items-center animate-duration-[2000ms] animate-jump-in animate-ease-in-out">
-        <h1 className="text-6xl font-bold">Jonathan Alarcon</h1>
-        <h3 className="text-2xl font-bold mb-10">Full Stack Developer</h3>
-      </div>
-
-      {/* Botón centrado */}
-      <div className="flex justify-center mb-10 transition-all duration-300 ease-in-out hover:scale-125 hover:rotate-6">
-        <button
-          className="flex items-center justify-center bg-amber-100 hover:bg-amber-200 w-40 h-20 rounded-full shadow-md transition"
-          onClick={() =>
-            window.open("https://github.com/joonalarcon", "_blank")
-          }>
-          <LogoGithub className="w-10 h-10" />
-        </button>
-      </div>
-
-      <div className="flex animate-fade-up animate-ease-in-out justify-center mb-20 bg-gradient-to-l from-sky-500 via-purple-500/90 to-indigo-500 p-4 rounded-lg">
-        <h1 className="text-3xl font-bold text-black ">
-          Portafolio en construcción
+    <div className="min-h-screen flex flex-col items-center justify-center px-4">
+      <header className="text-center mb-10">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
+          Jonathan Alarcón
         </h1>
+        <h3 className="text-xl sm:text-2xl font-semibold mt-2">
+          Full Stack Developer
+        </h3>
+      </header>
+
+      <button
+        className="flex items-center justify-center bg-amber-100 hover:bg-amber-200 w-40 h-14 rounded-full shadow-md transition mb-6"
+        onClick={() => window.open("https://github.com/joonalarcon", "_blank")}>
+        <LogoGithub className="w-8 h-8" />
+      </button>
+
+      <div className="flex justify-center text-center mb-10 bg-gradient-to-l from-sky-500 via-purple-500/90 to-indigo-500 p-4 rounded-lg w-full max-w-md">
+        <h2 className="text-xl sm:text-2xl font-bold text-black">
+          Portafolio en construcción
+        </h2>
       </div>
 
-      <div className="flex justify-center gap-4 mt-10 animate-fade-down animate-ease-in-out">
-        <a href="https://vitejs.dev/" target="_blank">
-          {" "}
-          <LogoVite className={animationLogos} />{" "}
-        </a>
-        <a href="https://react.dev/" target="_blank">
-          <LogoReact className={animationLogos} />
-        </a>
-        <a href="https://tailwindcss.com/" target="_blank">
-          <LogoTailwind className={animationLogos} />
-        </a>
+      <div className="flex justify-center gap-6 flex-wrap">
+        <LogoAstro className={animationLogos} />
+        <LogoTailwind className={animationLogos} />
+        <LogoReact className={animationLogos} />
       </div>
-    </>
+    </div>
   );
 }
 
