@@ -7,7 +7,7 @@ function Menu() {
   // 'block' para que cada enlace ocupe su propia línea en móvil.
   // 'text-center' para centrar el texto en móvil.
   const baseLinkClass =
-    "block text-white text-xl md:text-4xl font-bold hover:text-blue-400 transition-colors duration-300 py-2 px-2 rounded-md focus:outline-none md:shadow-lg md:shadow-purple-400 m-2 text-center";
+    "block text-white text-xl md:text-2xl font-bold hover:text-blue-400 transition-colors duration-300 py-2 px-2 rounded-md focus:outline-none md:shadow-lg md:shadow-purple-400 m-2 text-center";
   // Las clases 'md:shadow-lg' y 'md:shadow-purple-400' aseguran que la sombra
   // solo se aplique en pantallas medianas (md) y superiores (escritorio),
   // y no en pantallas más pequeñas (móviles).
@@ -28,13 +28,13 @@ function Menu() {
         */}
         <div className="flex flex-col md:flex-row items-center md:space-x-8 w-full md:w-auto mt-4 md:mt-0">
           <Link to="/home" className={`${baseLinkClass} md:mt-15 `}>
-            INICIO
+            Inicio
           </Link>
           <Link to="/projects" className={`${baseLinkClass} md:mt-15 `}>
-            PROYECTOS
+            Proyectos
           </Link>
           <Link to="/contact" className={`${baseLinkClass} md:mt-15 `}>
-            CONTACTO
+            Contacto
           </Link>
         </div>
       </div>
