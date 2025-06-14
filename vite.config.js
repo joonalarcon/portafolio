@@ -4,10 +4,10 @@ import tailwindcss from "@tailwindcss/vite";
 
 
 export default defineConfig({
-  base: "/portafolio/", // <--- importante para GitHub Pages
+  base: "/portafolio/",
   plugins: [
     react(),
-    tailwindcss(), // <--- plugin Tailwind para Vite
+    tailwindcss(), 
   ],
 });
 

@@ -1,51 +1,27 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom"; // Ya no necesitas Link aquí
 
-function Menu() {
-  return (
-    <nav style={{ padding: "1rem", backgroundColor: "#333", color: "#fff" }}>
-      <Link to="/" style={{ margin: "0 1rem", color: "inherit" }}>
-        Home
-      </Link>
-      <Link to="/about" style={{ margin: "0 1rem", color: "inherit" }}>
-        About
-      </Link>
-      <Link to="/services" style={{ margin: "0 1rem", color: "inherit" }}>
-        Services
-      </Link>
-      <Link to="/contact" style={{ margin: "0 1rem", color: "inherit" }}>
-        Contact
-      </Link>
-    </nav>
-  );
-}
+// Importa tus componentes de ruta desde src/routes
+import Home from "./routes/Home";
+import Contact from "./routes/Contact";
 
-function Home() {
-  return <h2>Home - Bienvenido a la página principal</h2>;
-}
+import Projects from "./routes/Projects";
+import FooterReact from "./components/FooterReact";
 
-function About() {
-  return <h2>About - Aquí va información sobre nosotros</h2>;
-}
-
-function Services() {
-  return <h2>Services - Estos son nuestros servicios</h2>;
-}
-
-function Contact() {
-  return <h2>Contact - Contáctanos aquí</h2>;
-}
+// Importa el componente Menu desde src/components
+import Menu from "./components/Menu"; // <-- ¡Nueva importación!
 
 export default function App() {
   return (
     <BrowserRouter>
+      {/* Usas el componente Menu aquí */}
       <Menu />
-      <div style={{ padding: "1rem" }}>
+      <div className="p-1">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <FooterReact />
       </div>
     </BrowserRouter>
   );
