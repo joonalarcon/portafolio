@@ -5,10 +5,10 @@ function TvOld() {
     <div className="relative w-fit h-fit flex items-center justify-center">
       {/* Fondo responsivo detrás de la TV */}
       <div
-        className="absolute bg-red-900 rounded-xl -z-10 animate-fade animate-duration-[10000ms]
+        className="flex absolute bg-black rounded-xl -z-10 animate-fade animate-duration-[10000ms] justify-center items-center
         
         // Tamaño por defecto (Mobile)
-        w-[280px] h-[220px]
+        w-[245px] h-[200px]  mr-15
 
         // Pantallas pequeñas (≥640px)
         sm:w-[340px] sm:h-[260px]
@@ -19,7 +19,9 @@ function TvOld() {
         // Pantallas grandes (≥1024px)
         lg:w-[475px] lg:h-[375px] lg:mr-30 mb-10"
 
-      />
+      >
+        <p className="text-green-400 animate-fade-up animate-duration-[5000ms] text-4xl font-bold">Jonathan Alarcon</p>
+      </div>
 
       {/* Imagen de la TV */}
       <img
