@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Projects = () => {
   return (
@@ -8,13 +8,17 @@ const Projects = () => {
           className="absolute inset-0 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 blur-lg opacity-50 -z-10 scale-105"
           aria-hidden="true"
         />
-        <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
+        {/* Este span se mostrará solo en pantallas pequeñas (móviles) */}
+        <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent md:hidden">
           Proyectos
+        </span>
+        {/* Este span se mostrará solo en pantallas medianas y grandes (computadoras) */}
+        <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent hidden md:block">
+          Algunos de mis proyectos
         </span>
       </h1>
     </div>
   );
-}
+};
 
-
-export default Projects
+export default Projects;
