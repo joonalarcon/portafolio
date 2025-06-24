@@ -17,10 +17,10 @@ function TvOld() {
         md:w-[420px] md:h-[310px]
 
         // Pantallas grandes (≥1024px)
-        lg:w-[475px] lg:h-[375px] lg:mr-30 mb-10"
-
-      >
-        <p className="text-green-400 animate-fade-up animate-duration-[5000ms] text-4xl font-bold">Jonathan Alarcon</p>
+        lg:w-[475px] lg:h-[375px] lg:mr-30 mb-10">
+        <p className="text-green-400 animate-fade-up animate-duration-[5000ms] text-4xl font-bold bg-black w-full h-full text-center flex items-center justify-center">
+          Portafolio en desarrollo :)
+        </p>
       </div>
 
       {/* Imagen de la TV */}
